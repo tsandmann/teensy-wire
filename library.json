@@ -1,0 +1,28 @@
+{
+  "name": "teensy-wire",
+  "keywords": "Teensy",
+  "description": "This library allows you to communicate with I2C and Two Wire Interface devices.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsandmann/teensy-wire"
+  },
+  "authors": [
+    {
+      "name": "Paul Stoffregen"
+    },
+    {
+      "name": "Timo Sandmann",
+      "maintainer": true
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": [ "teensy", "teensy-ts" ],
+  "build": {
+    "srcFilter": [
+      "+<*.h>",
+      "+<*.cpp>",
+      "-<examples/*>",
+      "-<utility/*>"
+    ]
+  }
+}
